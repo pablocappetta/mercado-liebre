@@ -1,0 +1,205 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: auto;
+  background-color: #ebebeb;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 12px;
+}
+
+.productos {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+
+hr {
+  border-color: #666;
+  border-width: 1px;
+  width: 60%;
+  opacity: 5%;
+}
+
+header {
+  background-color: #eac926;
+}
+
+article {
+  background-color: white;
+  border-style: solid;
+  border-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  transition: box-shadow 0.3s;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background: #fff;
+  float: left;
+}
+.box:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+
+.precio-dcto-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: -3mm;
+}
+
+.beneficios-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+}
+
+footer {
+  text-align: center;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  color: #666;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+p {
+  font-size: 12px;
+}
+
+p.grids {
+  color: #666;
+  margin-top: 5px;
+  text-align: center;
+}
+
+p.precios {
+  font-size: 18px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+p.descuentos {
+  font-size: 16px;
+  color: #39b54a;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+p.descripciones {
+  font-size: 16px;
+}
+
+.burger-menu {
+  background-color: #03264c;
+  color: #ebebeb;
+  font-size: 1.5em;
+  padding: 2mm;
+  width: 1em;
+  height: 1em;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.iconos {
+  color: #1259c3;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+#textoBajoLogo {
+  text-align: center;
+}
+
+.logo {
+  justify-content: left;
+  display: flex;
+}
+
+#copyright {
+  text-align: center;
+  color: #666;
+  font-size: 10px;
+  margin-top: 10mm;
+}
+
+#barra-de-busqueda {
+  text-align: center;
+  width: 150px;
+  height: 30px;
+  border: 0px;
+  border-radius: 3px;
+  margin-left: 20px;
+}
+
+.logoysearch {
+  display: flex;
+  padding: 10px 20px;
+  justify-content: center;
+}
+
+.subtitulo-card {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.opciones-card {
+  display: flex;
+  align-items: center;
+}
+
+.iconos-card {
+  margin-right: 5px;
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.ultimas-visitas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.ofertas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: -10px -10px;
+}
+
+/*
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;*/
