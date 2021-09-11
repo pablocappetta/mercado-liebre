@@ -26,6 +26,7 @@ hr {
 
 header {
   background-color: #eac926;
+  margin: auto;
 }
 
 article {
@@ -105,8 +106,8 @@ p.descripciones {
 }
 
 .burger-menu {
-  background-color: #03264c;
-  color: #ebebeb;
+  background-color: none;
+  color: black;
   font-size: 1.5em;
   padding: 2mm;
   width: 1em;
@@ -122,10 +123,6 @@ p.descripciones {
   margin-bottom: 10px;
 }
 
-#textoBajoLogo {
-  text-align: center;
-}
-
 .logo {
   justify-content: left;
   display: flex;
@@ -138,7 +135,7 @@ p.descripciones {
   margin-top: 10mm;
 }
 
-#barra-de-busqueda {
+.buscador {
   text-align: center;
   width: 150px;
   height: 30px;
@@ -147,7 +144,7 @@ p.descripciones {
   margin-left: 20px;
 }
 
-.logoysearch {
+.logo-buscador {
   display: flex;
   padding: 10px 20px;
   justify-content: center;
@@ -162,10 +159,12 @@ p.descripciones {
 
 .opciones-card {
   display: flex;
+  flex-direction: row;
   align-items: center;
+  margin-bottom: 10px;
 }
 
-.iconos-card {
+.iconos-nav {
   margin-right: 5px;
   margin-left: 5px;
   display: flex;
@@ -194,6 +193,39 @@ nav {
   flex-direction: column;
   align-items: center;
   margin: -10px -10px;
+  text-align: center;
+  justify-content: center;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: none;
+}
+
+.nav.menu {
+  justify-content: center;
+}
+
+a {
+  color: black;
+  font-size: 12px;
+  text-decoration: none;
+  align-items: center;
+}
+
+a:link {
+  color: black;
+}
+
+a:active {
+  color: black;
+}
+
+a:hover {
+  color: rgb(49, 49, 49);
 }
 
 /*
