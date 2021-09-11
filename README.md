@@ -4,5 +4,7 @@ This is a project that I'm working on for the [Digital House]'s course I'm atten
 
 <strong>Disclaimer:</strong> This is a really early concept. There's more to come! :)
 
-[Digital House]: https://www.digitalhouse.com/
-[Mercado Libre]: https://www.mercadolibre.com.ar/
+<!-- Links -->
+
+[digital house]: https://www.digitalhouse.com/
+[mercado libre]: https://www.mercadolibre.com.ar/
