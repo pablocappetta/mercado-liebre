@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   margin: auto;
@@ -13,8 +17,8 @@ ul {
   width: 300px;
   height: 300px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  border-radius: 5px;
 }
 
 hr {
@@ -30,11 +34,6 @@ header {
 }
 
 article {
-  background-color: white;
-  border-style: solid;
-  border-color: white;
-  display: flex;
-  flex-direction: column;
 }
 
 .box {
@@ -161,7 +160,7 @@ p.descripciones {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 10px;
+  margin: 5px;
 }
 
 .iconos-nav {
@@ -188,25 +187,22 @@ p.descripciones {
   text-align: center;
 }
 
-nav {
+/* nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: -10px -10px;
   text-align: center;
   justify-content: center;
-}
+} */
 
 .menu {
   display: flex;
+  flex-direction: column;
   align-items: center;
   text-align: center;
   justify-content: center;
   background-color: none;
-}
-
-.nav.menu {
-  justify-content: center;
+  height: auto;
 }
 
 a {
