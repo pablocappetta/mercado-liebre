@@ -6,6 +6,7 @@ body {
   font-family: "Roboto", sans-serif;
   margin: auto;
   background-color: #ebebeb;
+  min-width: fit-content;
 }
 
 ul {
@@ -185,7 +186,7 @@ p.descripciones {
 
 .ultimas-visitas {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -203,7 +204,7 @@ p.descripciones {
 
 .ofertas {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   text-align: center;
