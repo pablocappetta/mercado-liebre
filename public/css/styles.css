@@ -19,6 +19,8 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 hr {
@@ -38,9 +40,15 @@ article {
 
 .box {
   transition: box-shadow 0.3s;
-  border-radius: 10px;
-  border: 1px solid #ccc;
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  box-shadow: 0 0 11px rgba(172, 172, 172, 0.2);
   background: #fff;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
   float: left;
 }
 .box:hover {
@@ -49,10 +57,11 @@ article {
 
 .precio-dcto-card {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-top: -3mm;
+  height: 30px;
 }
 
 .beneficios-card {
@@ -89,13 +98,14 @@ p.grids {
 
 p.precios {
   font-size: 18px;
-  margin-right: 5px;
-  margin-left: 5px;
+  margin: auto;
 }
 
 p.descuentos {
   font-size: 16px;
   color: #39b54a;
+  margin: auto;
+  width: 100%;
   margin-left: 5px;
   margin-right: 5px;
 }
@@ -116,15 +126,16 @@ p.descripciones {
   justify-content: center;
 }
 
-.iconos {
+.iconos-beneficios {
   color: #1259c3;
   font-size: 2em;
   margin-bottom: 10px;
 }
 
-.logo {
+#logo {
   justify-content: left;
   display: flex;
+  width: 120px;
 }
 
 #copyright {
@@ -143,13 +154,13 @@ p.descripciones {
   margin-left: 20px;
 }
 
-.logo-buscador {
+.logo-buscador-card {
   display: flex;
   padding: 10px 20px;
   justify-content: center;
 }
 
-.subtitulo-card {
+#subtitulo-card {
   text-align: center;
   justify-content: center;
   display: flex;
@@ -169,9 +180,20 @@ p.descripciones {
   display: flex;
   align-items: center;
   text-align: center;
+  color: black;
 }
 
 .ultimas-visitas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.titulo-body {
   display: flex;
   flex-direction: column;
   justify-content: center;
