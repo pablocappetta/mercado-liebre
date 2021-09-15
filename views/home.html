@@ -14,19 +14,18 @@
   <body>
     <header>
       <div class="logo-buscador">
-        <div id="logo">
-          <img src="/logo-mercado-liebre.svg" />
+        <div id="contenedor-logo">
+          <img id="logo" width: "240" src="/logo-mercado-liebre.svg" />
         </div>
-        <div id="buscador">
-          <input
-            type="text"
-            placeholder="Buscar productos, marcas y mas..."
-            class="buscador box"
-          />
+        <div id="contenedor-buscador">
+          <input type="text" placeholder="Buscar productos..." id="buscador" />
         </div>
       </div>
       <div id="subtitulo">
-        <p><i class="fas fa-bars"></i>SUBTITULO</p>
+        <p>
+          <i class="fas fa-hand-holding-usd iconos"></i>Comprá en cuotas y sin
+          tarjeta de crédito
+        </p>
       </div>
       <nav>
         <div class="barra-navegacion">
@@ -37,22 +36,36 @@
             <li><a href="#">Ayuda</a></li>
           </ul>
         </div>
+        <br />
         <div class="barra-navegacion">
           <ul>
-            <li><a href="#">Crea tu cuenta</a><i class="fas fa-bars"></i></li>
-            <li><a href="#">Ingresa</a><i class="fas fa-bars"></i></li>
-            <li><a href="#">Mis compras</a><i class="fas fa-bars"></i></li>
+            <li>
+              <a href="#">Creá tu cuenta</a
+              ><i class="fas fa-id-card iconos"></i>
+            </li>
+            <li>
+              <a href="#">Ingresá</a><i class="fas fa-sign-in-alt iconos"></i>
+            </li>
+            <li>
+              <a href="#">Mis compras</a
+              ><i class="fas fa-shopping-basket iconos"></i>
+            </li>
           </ul>
         </div>
       </nav>
-      <div id="banner"><img src="img-home-banner.jpg" /></div>
+      <br />
       <div class="burger-menu">
         <i class="fas fa-bars"></i>
       </div>
+      <div id="contenedor-banner">
+        <img id="banner" src="img-home-banner.jpg" />
+      </div>
     </header>
-
     <main>
       <section class="ultimas-visitas">
+        <div>
+          <h2>Basado en tu última visita</h2>
+        </div>
         <article class="productos">
           <img src="/img-cafetera-moulinex.jpg" />
         </article>
@@ -67,6 +80,9 @@
         </article>
       </section>
       <section class="ofertas">
+        <div>
+          <h2>Ofertas</h2>
+        </div>
         <article class="productos">
           <img src="/img-cafetera-moulinex.jpg" />
         </article>
@@ -91,7 +107,7 @@
         </p>
       </section>
       <section class="beneficios">
-        <h3>Envío gratis desde $ 2.500</h3>
+        <h3>Envío gratis desde $2.500</h3>
         <p>
           Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en
           miles de productos. Es un beneficio de Mercado Puntos.
