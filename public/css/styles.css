@@ -612,10 +612,6 @@ img {
   }
 }
 
-input::placeholder {
-  placeholder: "Buscar productos, marcas y más...";
-}
-
 /*
 
 Amarillo: #EAC926;
