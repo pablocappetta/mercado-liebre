@@ -76,18 +76,23 @@ p {
 
 p.precios {
   font-size: 18px;
+  flex-grow: 0.4;
+  margin-left: 15px;
 }
 
 p.descuentos {
   font-size: 16px;
   color: #39b54a;
   align-self: center;
-  margin-left: 10px;
+  flex-grow: 9;
 }
 
 p.descripcion {
   font-size: 16px;
-  margin-bottom: 15px;
+  text-align: left;
+  margin-left: 15px;
+  margin-top: auto;
+  color: #666;
 }
 
 h3 {
@@ -114,7 +119,7 @@ section.beneficios {
 }
 
 #logo {
-  width: 120px;
+  width: 50%;
 }
 
 img {
@@ -136,9 +141,18 @@ img {
 }
 
 .iconos-envio {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
   color: #39b54a;
-  align-self: center;
-  margin-left: 10px;
+  top: -15px;
 }
 
 /* Modificadores especificos */
@@ -164,8 +178,8 @@ img {
 .contenedor-texto-icono-nav {
   display: flex;
   text-align: center;
-  margin: 5px;
-  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 5px;
 }
 
 .contenedor-beneficios {
@@ -182,17 +196,13 @@ img {
   padding-bottom: 10px;
 }
 
-#contenedor-logo {
-  display: flex;
-  align-self: center;
-  justify-content: center;
+/* #contenedor-logo {
+  width: 50%;
 }
 
 #contenedor-buscador {
-  display: flex;
-  align-self: center;
-  justify-content: center;
-}
+  width: 50%;
+} */
 
 #contenedor-banner {
   align-self: center;
@@ -214,15 +224,10 @@ img {
 .contenedor-detalles-productos {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  text-align: center;
+  justify-content: flex-start;
+  text-align: left;
   border-top: 1px solid #ebebeb;
-}
-
-.productos {
-  display: flex;
-  align-self: center;
-  flex-direction: row;
+  position: relative;
 }
 
 .beneficios h3 {
@@ -236,18 +241,27 @@ img {
 
 .logo-buscador {
   display: flex;
-  padding: 10px 20px;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  padding: 10px;
+  margin: auto;
+  width: 100%;
+}
+
+.nuevo-div-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 #buscador {
-  display: flex;
-  text-align: center;
-  margin-left: 20px;
-  width: 150px;
-  height: 30px;
   border: 0px;
   border-radius: 3px;
+  width: 50%;
+  margin-left: 15px;
+  height: 30px;
+  text-align: center;
 }
 
 .ultimas-visitas {
@@ -261,7 +275,7 @@ img {
 /* Media queries */
 
 /*Mobile*/
-@media (max-width: 360px) {
+@media (max-width: 360px) and (max-width: 767px) {
   .barra-navegacion {
     display: none;
   }
@@ -272,9 +286,18 @@ img {
 }
 
 /*Tablet*/
-@media (min-width: 361px) and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .burger-menu {
     display: none;
+  }
+
+  #logo {
+    width: 202.5px;
+  }
+
+  #buscador {
+    margin-left: 15px;
+    margin-right: 15px;
   }
 
   .barra-navegacion {
@@ -286,6 +309,52 @@ img {
     transition: box-shadow 0.3s;
     box-shadow: 0 0 10px rgba(172, 172, 172, 0.2);
     float: left;
+  }
+
+  .logo-buscador {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .nuevo-div-logo {
+    flex: 60%;
+  }
+
+  #subtitulo {
+    flex: 40%;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+    justify-items: center;
+    justify-self: center;
+  }
+
+  .contenedor-texto-icono-nav {
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+    justify-items: center;
+    justify-self: center;
+    margin: 0px;
+  }
+
+  .ultimas-visitas {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .ofertas {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .productos {
+    flex: 50%;
+  }
+
+  .contenedor-productos {
+    margin: 8px;
   }
 
   .contenedor-productos:hover {
@@ -294,9 +363,18 @@ img {
 }
 
 /*Desktop*/
-@media (min-width: 769px) {
+@media (min-width: 1024px) {
   .burger-menu {
     display: none;
+  }
+
+  #logo {
+    width: 202.5px;
+  }
+
+  #buscador {
+    margin-left: 15px;
+    margin-right: 15px;
   }
 
   .barra-navegacion {
@@ -304,18 +382,56 @@ img {
     padding-bottom: 10px;
   }
 
-  .ultimas-visitas {
-    display: flex;
-  }
-
-  .ofertas {
-    display: flex;
-  }
-
   .contenedor-productos {
     transition: box-shadow 0.3s;
     box-shadow: 0 0 10px rgba(172, 172, 172, 0.2);
     float: left;
+  }
+
+  .logo-buscador {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .nuevo-div-logo {
+    flex: 60%;
+  }
+
+  #subtitulo {
+    flex: 40%;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+    justify-items: center;
+    justify-self: center;
+  }
+
+  .contenedor-texto-icono-nav {
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+    justify-items: center;
+    justify-self: center;
+    margin: 0px;
+  }
+
+  .ultimas-visitas {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .ofertas {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .productos {
+    flex: 25%;
+  }
+
+  .contenedor-productos {
+    margin: 8px;
   }
 
   .contenedor-productos:hover {
