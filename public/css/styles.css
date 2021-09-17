@@ -398,8 +398,8 @@ img {
   }
 }
 
-/*Desktop*/
-@media (min-width: 1024px) {
+/*Laptop*/
+@media (min-width: 1024px) and (max-width: 1439px) {
   .burger-menu {
     display: none;
   }
@@ -502,6 +502,118 @@ img {
   .contenedor-productos:hover {
     box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
   }
+}
+
+/*Desktop*/
+@media (min-width: 1440px) {
+  .burger-menu {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+  }
+
+  .menu-izq {
+    padding-bottom: 1.5px;
+    flex: 50%;
+    justify-content: center;
+    max-width: 100%;
+  }
+
+  .menu-der {
+    flex: 50%;
+    justify-content: center;
+    max-width: 100%;
+  }
+
+  li {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  ul {
+    display: flex;
+  }
+
+  #logo {
+    width: 202.5px;
+  }
+
+  #buscador {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .barra-navegacion {
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 25px;
+    justify-content: center;
+  }
+
+  .contenedor-productos {
+    transition: box-shadow 0.3s;
+    box-shadow: 0 0 10px rgba(172, 172, 172, 0.2);
+    float: left;
+  }
+
+  .logo-buscador {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 963px;
+  }
+
+  .nuevo-div-logo {
+    flex: 60%;
+  }
+
+  #subtitulo {
+    flex: 40%;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+    justify-items: center;
+    justify-self: center;
+  }
+
+  .contenedor-texto-icono-nav {
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+    justify-items: center;
+    justify-self: center;
+    margin: 0px;
+  }
+
+  .ultimas-visitas {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .ofertas {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .productos {
+    flex: 20%;
+  }
+
+  .contenedor-productos {
+    margin: 8px;
+  }
+
+  .contenedor-productos:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  }
+}
+
+input::placeholder {
+  placeholder: "Buscar productos, marcas y más...";
 }
 
 /*
