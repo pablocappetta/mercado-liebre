@@ -114,6 +114,11 @@ h2 {
 
 /* Modificadores de imagenes */
 
+.imagen-producto {
+  max-width: 100%;
+  padding: 15px;
+}
+
 section.beneficios {
   padding: 30px;
 }
