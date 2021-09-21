@@ -11,4 +11,12 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "/views/home.html"));
 });
 
+app.get("/registro", (req, res) => {
+  res.sendFile(path.join(__dirname, "/views/register.html"));
+});
+
+app.post("/registro", (req, res) => {
+  res.redirect("/");
+});
+
 app.use(express.static("public"));

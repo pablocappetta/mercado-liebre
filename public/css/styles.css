@@ -455,6 +455,8 @@ img {
     transition: box-shadow 0.3s;
     box-shadow: 0 0 10px rgba(172, 172, 172, 0.2);
     float: left;
+    width: 240px;
+    height: 338px;
   }
 
   .logo-buscador {
@@ -475,6 +477,7 @@ img {
     align-content: center;
     justify-items: center;
     justify-self: center;
+    padding-left: 65px;
   }
 
   .contenedor-texto-icono-nav {
@@ -583,6 +586,7 @@ img {
     align-content: center;
     justify-items: center;
     justify-self: center;
+    padding-left: 110px;
   }
 
   .contenedor-texto-icono-nav {
