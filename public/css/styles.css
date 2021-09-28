@@ -256,6 +256,8 @@ img {
 }
 
 .formulario-pagina-registro button:hover {
+  background-color: #0022aa;
+  border: solid 1px #0022aa;
 }
 
 .formulario-pagina-registro .contenedor-categoria-interes {
