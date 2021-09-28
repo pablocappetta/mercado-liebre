@@ -41,11 +41,11 @@
           </ul>
           <ul class="menu-der">
             <li>
-              <a href="#">Creá tu cuenta</a>
+              <a href="/registro">Creá tu cuenta</a>
               <i class="fas fa-id-card iconos-nav"></i>
             </li>
             <li>
-              <a href="#">Ingresá</a>
+              <a href="/login">Ingresá</a>
               <i class="fas fa-sign-in-alt iconos-nav"></i>
             </li>
             <li>
@@ -59,7 +59,106 @@
         <i class="fas fa-bars"></i>
       </div>
     </header>
-    <main>test</main>
+    <main>
+      <section class="contenedor-pagina-registro">
+        <form action="/registro" method="POST">
+          <div class="formulario-pagina-registro">
+            <label for="nombreApellido">Nombre y Apellido</label>
+            <input
+              type="text"
+              name="nombreApellido"
+              id="nombreApellido"
+              required
+            />
+          </div>
+          <div class="formulario-pagina-registro">
+            <label for="usuario">Nombre de Usuario</label>
+            <input type="text" name="usuario" id="usuario" required />
+          </div>
+          <div class="formulario-pagina-registro">
+            <label for="fechaNacimiento">Fecha de Nacimiento</label>
+            <input
+              type="date"
+              name="fechaNacimiento"
+              id="fechaNacimiento"
+              required
+            />
+          </div>
+          <div class="formulario-pagina-registro">
+            <label for="domicilio">Domicilio</label>
+            <input type="text" name="domicilio" id="domicilio" required />
+          </div>
+          <div class="formulario-pagina-registro">
+            <label for="perfil">¿Vendedor o Comprador?</label>
+            <select name="perfil" required>
+              <option value="Vendedor">Vendedor</option>
+              <option value="Comprador">Comprador</option>
+            </select>
+          </div>
+          <div class="formulario-pagina-registro">
+            <label for="categoriaInteres" class="categoriaInteres"
+              >Categoria de Interés</label
+            >
+            <div class="contenedor-categoria-interes">
+              <div class="contenedor-flex-interes">
+                <input type="checkbox" name="categoriaInteres" value="Electro"/>
+                Electro
+              </div>
+              <div class="contenedor-flex-interes">
+                <input type="checkbox" name="categoriaInteres" value="Moda" /> Moda
+              </div>
+              <div class="contenedor-flex-interes">
+                <input type="checkbox" name="categoriaInteres" value="Hogar" /> Hogar
+              </div>
+              <div class="contenedor-flex-interes">
+                <input type="checkbox" name="categoriaInteres" value="Jugueteria" />
+                Juguetería
+              </div>
+              <div class="contenedor-flex-interes">
+                <input type="checkbox" name="categoriaInteres" value="Vida Sana" />
+                Vida Sana
+              </div>
+              
+            </div>
+          </div>
+          <div class="formulario-pagina-registro">
+            <label for="foto">Foto de Perfil</label>
+            <input
+              type="file"
+              name="foto"
+              id="foto"
+              accept=".jpg"
+            />
+          </div>
+          <div class="formulario-pagina-registro">
+            <label for="passwordUsuario">Contraseña</label>
+            <input
+              type="password"
+              name="passwordUsuario"
+              id="passwordUsuario"
+              required
+            />
+          </div>
+          <div class="formulario-pagina-registro">
+            <label for="confirmarPassword">Confirmá tu contraseña</label>
+            <input
+              type="password"
+              name="confirmarPassword"
+              id="confirmarPassword"
+              required
+            />
+          </div>
+          <div class="formulario-pagina-registro">
+            <div class="contenedor-botones-registro">
+              <button type="reset" name>Cancelar</button>
+              <button type="submit">Crear usuario</button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    </main>
     <br />
     <footer>
       <div class="contenedor-beneficios">

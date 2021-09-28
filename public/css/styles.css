@@ -158,6 +158,12 @@ img {
   right: 20px;
   color: #39b54a;
   top: -15px;
+  transition: 0.3s ease-in-out;
+}
+
+.iconos-envio:hover {
+  transition: transform 0.3s ease-in-out;
+  transform: rotate(-90deg);
 }
 
 /* Modificadores especificos */
@@ -196,6 +202,89 @@ img {
   align-self: center;
   justify-self: center;
   text-align: center;
+}
+
+.contenedor-pagina-registro {
+  margin: auto;
+  padding-top: 16px;
+}
+
+.formulario-pagina-registro {
+  margin: 12px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.formulario-pagina-registro input {
+  width: 240px;
+  text-align: center;
+  align-self: center;
+  border: solid 1px transparent;
+  border-radius: 5px;
+  height: 30px;
+}
+
+.formulario-pagina-registro select {
+  width: 240px;
+  height: 30px;
+  text-align: center;
+  align-self: center;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+.formulario-pagina-registro label {
+  font-weight: bold;
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+
+.formulario-pagina-registro button {
+  flex-direction: row;
+  align-self: center;
+  width: 120px;
+  height: 36px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  border: solid 1px #1259c3;
+  background-color: #1259c3;
+  color: white;
+  border-radius: 5px;
+}
+
+.formulario-pagina-registro button:hover {
+}
+
+.formulario-pagina-registro .contenedor-categoria-interes {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 100%;
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+
+.contenedor-categoria-interes input {
+  display: flex;
+  flex-direction: column;
+  width: 24px;
+  height: 24px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  margin-right: 8px;
+}
+
+.contenedor-flex-interes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contenedor-botones-registro {
+  margin-top: 24px;
 }
 
 .burger-menu {

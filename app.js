@@ -19,4 +19,12 @@ app.post("/registro", (req, res) => {
   res.redirect("/");
 });
 
+app.get("/login", function (req, res) {
+  res.sendFile(path.join(__dirname, "/views/login.html"));
+});
+
+app.post("/login", (req, res) => {
+  res.redirect("/");
+});
+
 app.use(express.static("public"));
