@@ -27,4 +27,8 @@ app.post("/login", (req, res) => {
   res.redirect("/");
 });
 
+app.post("/search", (req, res) => {
+  res.redirect("/");
+});
+
 app.use(express.static("public"));

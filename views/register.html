@@ -16,7 +16,16 @@
       <div class="logo-buscador">
         <div class="nuevo-div-logo">
           <img id="logo" src="/logo-mercado-liebre.svg" />
-          <input type="text" placeholder="Buscar productos..." id="buscador" />
+          <form class="buscador-boton" action="/search" method="POST">
+            <input
+              type="text"
+              placeholder="Buscar productos..."
+              id="buscador"
+            />
+            <button type="submit">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
         </div>
         <div id="subtitulo">
           <i class="fas fa-hand-holding-usd iconos-nav"></i>
