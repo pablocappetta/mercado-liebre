@@ -413,6 +413,8 @@ img {
   }
 
   .productos {
+    max-width: 380px;
+    margin: auto;
   }
 }
 
