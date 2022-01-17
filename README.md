@@ -1,6 +1,6 @@
 ## Mercado Liebre
 
-This is a project I worked on for the [Digital House]'s course I'm attending. The goal is to replicate the home section of the original [Mercado Libre] website using HTML, CSS and Express.js.
+This is a project I worked on for the [Digital House]'s course I attended. The goal was to replicate the home section of the original [Mercado Libre] website using HTML, CSS and Express.js.
 
 <!-- Links -->
 
